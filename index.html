@@ -8,7 +8,9 @@
   <body>
 
     <div id="app">
-
+      <ul v-for="(email, index) in email" :key="index">
+        <li>{{ email }}</li>
+      </ul>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
